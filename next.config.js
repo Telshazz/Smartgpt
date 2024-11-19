@@ -2,7 +2,9 @@
 const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
-  swcMinify: false // Disable SWC minification for WebContainer compatibility
+  swcMinify: false,
+  trailingSlash: true,
+  distDir: 'out'
 };
 
 module.exports = nextConfig;
